@@ -3,6 +3,7 @@
 }
 
 .featured__subtitle {
+    margin-top: .7rem;
     font-size: var(--size-lg);
     color: var(--clr-indigo);
     text-transform: capitalize;
@@ -49,7 +50,27 @@
     text-decoration: none;
 }
 
+.team_list_item {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.my_team_text {
+    color: var(--clr-slate600);
+    font-size: var(--size-sm);
+}
+
+.margb {
+    margin-bottom: .3rem;
+}
+
+.rose_red {
+    color: var(--clr-rose);
+}
+
 .project_tech_stack {
+    margin-top: 1rem;
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
@@ -65,7 +86,6 @@
 .project_item > p {
     color: var(--clr-slate600);
     font-size: var(--size-sm);
-    margin: 1rem 0;
 }
 
 .featured__description {
@@ -153,23 +173,23 @@
 
     .role_item {
         font-size: var(--size-base);
-        margin: 1.5rem 0;
+    }
+    
+    .my_team_text {
+        font-size: var(--size-base);
     }
 
     .team_container {
         font-size: var(--size-base);
-        margin: 1.5rem 0;
     }
 
     .project_item > i,
     .project_item > p {
         font-size: var(--size-base);
-        margin: 1.5rem 0;
     }
 
     .featured__description {
         font-size: var(--size-base);
-        margin: 1.5rem 0;
     }
 
     .featured__label {
@@ -220,6 +240,10 @@
         font-size: var(--size-lg);
     }
 
+    .my_team_text {
+        font-size: var(--size-lg);
+    }
+
     .team_container {
         font-size: var(--size-lg);
     }
@@ -261,6 +285,10 @@
     }
 
     .role_item {
+        font-size: var(--size-xl);
+    }
+
+    .my_team_text {
         font-size: var(--size-xl);
     }
 

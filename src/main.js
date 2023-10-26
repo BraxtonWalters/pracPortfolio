@@ -9,6 +9,7 @@ import "../styles/components/contact.css";
 import "../styles/components/footer.css";
 import "../styles/components/mobile-nav.css";
 import "../styles/components/modal.css";
+import "../styles/components/background-circles.css"
 import "../styles/utils.css";
 
 import mobileNav from "./utils/mobile-nav";

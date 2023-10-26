@@ -1,8 +1,5 @@
-.centerthing {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+#featured {
+    max-width: 1005px;
 }
 
 .featured__subtitle {
@@ -25,12 +22,52 @@
 }
 
 .featured__link {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
     width: var(--size-2xl);
     height: var(--size-2xl);
 }
 
+.featured__link > i {
+    font-size: 30px;
+}
+
+.role_item {
+    color: var(--clr-slate600);
+    font-size: var(--size-sm);
+    margin: 1rem 0;
+}
+
+.team_container {
+    color: var(--clr-slate600);
+    font-size: var(--size-sm);
+    margin: 1rem 0;
+}
+
+.text_dec_none > a {
+    text-decoration: none;
+}
+
+.project_tech_stack {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.project_item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project_item > i,
+.project_item > p {
+    color: var(--clr-slate600);
+    font-size: var(--size-sm);
+    margin: 1rem 0;
+}
+
 .featured__description {
-    max-width: 100ch;
     color: var(--clr-slate600);
     font-size: var(--size-sm);
     margin: 1rem 0;
@@ -113,6 +150,22 @@
         height: var(--size-3xl);
     }
 
+    .role_item {
+        font-size: var(--size-base);
+        margin: 1.5rem 0;
+    }
+
+    .team_container {
+        font-size: var(--size-base);
+        margin: 1.5rem 0;
+    }
+
+    .project_item > i,
+    .project_item > p {
+        font-size: var(--size-base);
+        margin: 1.5rem 0;
+    }
+
     .featured__description {
         font-size: var(--size-base);
         margin: 1.5rem 0;
@@ -162,6 +215,19 @@
         height: var(--size-4xl);
     }
 
+    .role_item {
+        font-size: var(--size-lg);
+    }
+
+    .team_container {
+        font-size: var(--size-lg);
+    }
+
+    .project_item > i,
+    .project_item > p {
+        font-size: var(--size-lg);
+    }
+
     .featured__description {
         font-size: var(--size-lg);
     }
@@ -191,6 +257,19 @@
     .featured__link {
         width: var(--size-5xl);
         height: var(--size-5xl);
+    }
+
+    .role_item {
+        font-size: var(--size-xl);
+    }
+
+    .team_container {
+        font-size: var(--size-xl);
+    }
+
+    .project_item > i,
+    .project_item > p {
+        font-size: var(--size-xl);
     }
 
     .featured__description {

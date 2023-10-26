@@ -93,6 +93,9 @@
     background-color: rgba(79, 70, 229, 0.1);
 }
 
+/* #featured_img_1, #featured_img_4 {
+    grid-column: 1 / span 2;
+} */
 
 
 /* xs */

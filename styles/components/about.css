@@ -86,6 +86,7 @@
     .tech_banner_container {
         max-width: 1005px;
         justify-content: space-between;
+        overflow: hidden;
     }
 }
 /* lg */

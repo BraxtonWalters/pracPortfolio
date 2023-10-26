@@ -1,0 +1,235 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal_content {
+    margin: 7.5% auto;
+    padding: 20px;
+    background-color: #070a13;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.5), 0 6px 6px rgb(0, 0, 0, 0.5), 0 0 100px -10px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.modal_title {
+    font-size: var(--size-2xl);
+    color: #f1f5f9;
+}
+
+.form_style {
+    gap: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_input_box {
+    position: relative;
+    width: 100%;
+}
+
+.modal_input_box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: #070a13;
+    border-radius: 5px;
+    outline: none;
+    color: #f1f5f9;
+    font-size: 1em;
+    transition: 0.2s;
+}
+
+.modal_input_box_span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #f1f5f9;
+    transition: 0.2s;
+}
+
+.modal_input_box input:focus ~ span {
+    color: #f1f5f9;
+    transform: translateX(30px) translateY(-15px);
+    font-size: 0.95em;
+    padding: 0 10px;
+    background: var(--clr-indigo);
+    letter-spacing: 0.2em;
+    border-radius: 2px;
+}
+
+.filled_input {
+    padding: 0 10px;
+    color: #f1f5f9;
+    transform: translateX(30px) translateY(-15px);
+    font-size: 0.95em;
+    background: var(--clr-indigo);
+    letter-spacing: 0.2em;
+    border-radius: 2px;
+}
+
+.modal_input_box input:valid,
+.modal_input_box input:focus {
+    border: 1px solid var(--clr-indigo);
+}
+
+.modal_input_box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: #070a13;
+    border-radius: 5px;
+    outline: none;
+    color: #f1f5f9;
+    font-size: 1em;
+    transition: 0.2s;
+}
+
+.modal_input_box textarea:focus ~ span {
+    color: #f1f5f9;
+    transform: translateX(30px) translateY(-15px);
+    font-size: 0.95em;
+    padding: 0 10px;
+    background: var(--clr-indigo);
+    letter-spacing: 0.2em;
+    border-radius: 2px;
+}
+
+.modal_input_box textarea:valid,
+.modal_input_box textarea:focus {
+    border: 1px solid var(--clr-indigo);
+}
+
+.form_style > input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form_style > input::placeholder, textarea::placeholder {
+    color: var(--clr-slate800);
+    font-size: var(--size-sm);
+}
+
+.btn_container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal_btn {
+    font-size: var(--size-sm);
+}
+
+.error_container {
+    display: flex;
+    justify-content: center;
+}
+
+.error_message {
+    color: var(--clr-rose);
+    font-size: var(--size-sm);
+    display: none;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    
+    .modal_title {
+        font-size: var(--size-3xl);
+    }
+
+    .modal_content {
+        width: 100%;
+    }
+
+    .modal_btn {
+        font-size: var(--size-base);
+    }
+
+    .form_style > input::placeholder, textarea::placeholder {
+        font-size: var(--size-base);
+    }
+
+    .error_message {
+        font-size: var(--size-base)
+    }
+}
+/* sm */
+@media (min-width: 640px) {
+    
+    .modal_content {
+        margin: 40% auto;
+    }
+}
+/* md */
+@media (min-width: 768px) {
+    
+    .modal_content {
+        width: 70%;
+    }
+
+    .modal_content {
+        margin: 20% auto;
+    }
+
+}
+/* lg */
+@media (min-width: 1024px) {
+    
+    .modal_title {
+        font-size: var(--size-4xl);
+    }
+
+    .modal_btn {
+        font-size: var(--size-lg);
+    }
+
+    .modal_content {
+        margin: 10% auto;
+    }
+
+    .form_style > input::placeholder, textarea::placeholder {
+        font-size: var(--size-lg);
+    }
+
+    .error_message {
+        font-size: var(--size-lg)
+    }
+
+}
+/* xl */
+@media (min-width: 1280px) {
+
+    .modal_title {
+        font-size: var(--size-5xl);
+    }
+
+    .modal_content {
+        width: 40%;
+    }
+
+    .modal_btn {
+        font-size: var(--size-xl);
+    }
+
+    .form_style > input::placeholder, textarea::placeholder {
+        font-size: var(--size-xl);
+    }
+
+    .error_message {
+        font-size: var(--size-xl)
+    }
+}
+/* 2xl */
+@media (min-width: 1536px) {
+
+}

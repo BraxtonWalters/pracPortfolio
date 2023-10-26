@@ -23,21 +23,15 @@
     font-size: var(--size-sm);
 }
 
+.or_thing {
+    margin-top: 1rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.social_container {
+    font-size: 48px;
+    display: flex;
+    gap: 1rem;
+}
 
 /* xs */
 @media (min-width: 475px) {

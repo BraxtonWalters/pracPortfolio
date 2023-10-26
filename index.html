@@ -1,192 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
-    <title>Braxton Walters</title>
-  </head>
-  <body>
-    <header class="header container">
-      <nav>
-        <ul class="header__menu">
-          <li>
-            <a class="header__link" href="#about">About</a>
-          </li>
-          <li>
-            <a class="header__link" href="#featured">Work</a>
-          </li>
-          <li>
-            <a class="header__link" href="#contact">Contact</a>
-          </li>
-          <li class="header__line"></li>
-          <li>
-            <button id="theme-toggle" class="header__sun">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-              </svg>
-            </button>
-          </li>
-          <li>
-            <a class="header__resume btn" target="_blank" href="/BraxtonWaltersResume.pdf">Resume</a>
-          </li>
-        </ul>
-        <button class="header__bars">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
-          </svg>
-        </button>
-      </nav>
-    </header>
-    <!-- Mobile Nav -->
-    <div class="mobile-nav">
-      <nav>
-        <ul class="mobile-nav__menu">
-          <li>
-            <a class="mobile-nav__link" href="#about">About</a>
-          </li>
-          <li>
-            <a class="mobile-nav__link" href="#featured">Work</a>
-          </li>
-          <li>
-            <a class="mobile-nav__link" href="#contact">Contact</a>
-          </li>
-          <li class="mobile-nav__link-line"></li>
-          <li>
-            <button id="theme-toggle" class="mobile-nav__sun">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-              </svg>
-            </button>
-          </li>
-          <li>
-            <a class="mobile-nav__btn btn" target="_blank" href="/BraxtonWaltersResume.pdf">Resume</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <!-- End of Mobile Nav -->
-    <main>
-      <section class="hero container">
-        <h2 class="hero__subtitle">Hi, I'm Braxton</h2>
-        <h1 class="hero__title">FRONT-END <br> WEB DEVELOPER</h1>
-        <p class="hero__description">A passionate <strong>frontend / Fullstack-Jamstack</strong> web developer and <strong>UI/UX</strong> enthusiast specialized in building stunning pixel-perfect interactive websites/applications.</p>
-        <a class="hero__btn btn" href="mailto:braxton.walters@gmail.com" target="_blank">Reach out</a>
-      </section>
-      <section id="about" class="about container section">
-        <div class="about__content">
-          <h2 class="about__title">About</h2>
-          <p class="about__description">Hello there! I'm Braxton, a <strong>Frontend / Fullstack-Jamstack</strong> web developer based near Indianapolis. I wake up in the morning, grab a cup of coffee, open up my laptop and build things that live on the web all day, everyday.</p>
-          <p class="about__description">People who know me say I'm obsessed, that's fair, I am very driven and love learning new things.</p>
-          <p class="about__description">I recently just got my Full-Stack certificate from the <a>Coding Dojo</a> where I spent <a>1000+ hours</a> on intensive coursework through all phases of project development of full-stack application including building, testing, debugging, and deploying.</p>
-          <hr class="about__hr">
-          <h3 class="about__subtitle">Technologies</h3>
-          <div class="about__ul-container">
-            <ul class="about__ul">
-              <li class="about__list">Java</li>
-              <li class="about__list">Python</li>
-              <li class="about__list">Node.js</li>
-            </ul>
-            <ul class="about__ul">
-              <li class="about__list">React</li>
-              <li class="about__list">Flask</li>
-              <li class="about__list">Express</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section id="featured" class="featured container section centerthing">
-        <h3 class="featured__title">Featured Project</h3>
-        <div class="featured__wrapper">
-          <h2 class="featured__subtitle">Collectormania</h2>
-          <a class="featured__link" href="https://github.com/BraxtonWalters/Coder_Dex">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/616d4199ea.js" crossorigin="anonymous"></script>
+  <title>Braxton Walters</title>
+</head>
+
+<body>
+  <header class="header container">
+    <nav>
+      <ul class="header__menu">
+        <li>
+          <a class="header__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="header__link" href="#featured">Work</a>
+        </li>
+        <li>
+          <a class="header__link" href="#contact">Contact</a>
+        </li>
+        <li class="header__line"></li>
+        <li>
+          <button id="theme-toggle" class="header__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
             </svg>
-          </a>
+          </button>
+        </li>
+        <li>
+          <a class="header__resume btn" target="_blank" href="/BraxtonWaltersResume.pdf">Resume</a>
+        </li>
+      </ul>
+      <button class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li>
+          <a class="mobile-nav__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#featured">Work</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#contact">Contact</a>
+        </li>
+        <li class="mobile-nav__link-line"></li>
+        <li>
+          <button id="theme-toggle" class="mobile-nav__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="mobile-nav__btn btn" target="_blank" href="/BraxtonWaltersResume.pdf">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- End of Mobile Nav -->
+  <main>
+    <section class="hero container">
+      <h2 class="hero__subtitle">Hi, I'm Braxton</h2>
+      <h1 class="hero__title">Fullstack <br> WEB DEVELOPER</h1>
+      <p class="hero__description">A passionate <strong>Fullstack</strong> web developer and <strong>UI/UX</strong>
+        enthusiast specialized in building stunning, pixel-perfect interactive applications.</p>
+      <button class="open_model hero__btn btn">Reach out</button>
+    </section>
+    <section id="about" class="about container section">
+      <div class="about__content">
+        <h2 class="about__title">About</h2>
+        <p class="about__description">Hello there! I'm Braxton, a <strong>Fullstack</strong> web developer based in
+          Indiana. I wake up in the morning, grab a cup of coffee, open up my laptop and build things that live on the
+          web all day, everyday. People who know me say I'm obsessed, that's fair, I am very driven and love learning
+          new things.</p>
+        <p class="about__description">I graduated from <span>Coding Dojo</span> as a Fullstack web developer, where I
+          spent <span>1000+ hours</span> honing my skills through all phases of project development, including building,
+          testing, debugging, and deploying.</p>
+        <h3 class="about__subtitle">Technologies</h3>
+        <hr class="about__hr">
+        <div class="tech_banner_container">
+          <div class="tech_banner_item">
+            <i class="fa-brands fa-java"></i>
+            <p>Java</p>
+          </div>
+          <div class="tech_banner_item">
+            <i class="fa-brands fa-python"></i>
+            <p>Python</p>
+          </div>
+          <div class="tech_banner_item">
+            <i class="fa-brands fa-react"></i>
+            <p>React</p>
+          </div>
+          <div class="tech_banner_item">
+            <i class="fa-brands fa-square-js"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="tech_banner_item">
+            <i class="fa-brands fa-node"></i>
+            <p>Node.js</p>
+          </div>
+          <div class="tech_banner_item">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML5</p>
+          </div>
+          <div class="tech_banner_item">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>CSS</p>
+          </div>
         </div>
-        <p class="featured__description">I was invited to take on the role of a front-end developer for this project by a UX/UI designer. Our primary objective was to revamp the outdated website. Our UX/UI expert had already completed the Figma designs, which greatly streamlined the coding process. This project significantly emphasized the concept of componentization, resulting in exceptionally clean and concise code. I take great pride in our achievements, and it's the icing on the cake that the users adore it!</p>
-        <div class="featured__info-container">
-          <div>
-            <h3 class="featured__label">Tech stack</h3>
-            <ul class="featured__tech-stack">
-              <li class="featured__info">React</li>
-              <li class="featured__info">Node.js</li>
-              <li class="featured__info">Express</li>
-              <li class="featured__info">MongoDB</li>
-              <li class="featured__info">Material UI</li>
-            </ul>
+        <hr class="about__hr">
+      </div>
+    </section>
+    <section id="featured" class="featured container section centerthing">
+      <h3 class="featured__title">Featured Project</h3>
+      <div class="featured__wrapper">
+        <h2 class="featured__subtitle">Collectormania</h2>
+        <a class="featured__link" href="https://github.com/BraxtonWalters/Coder_Dex">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+          </svg>
+        </a>
+      </div>
+      <p class="featured__description">I was invited to take on the role of a front-end developer for this project by a
+        UX/UI designer. Our primary objective was to revamp the outdated website. Our UX/UI expert had already completed
+        the Figma designs, which greatly streamlined the coding process. This project significantly emphasized the
+        concept of componentization, resulting in exceptionally clean and concise code. I take great pride in our
+        achievements, and it's the icing on the cake that the users adore it!</p>
+      <div class="featured__info-container">
+        <div>
+          <h3 class="featured__label">Tech stack</h3>
+          <ul class="featured__tech-stack">
+            <li class="featured__info">React</li>
+            <li class="featured__info">Node.js</li>
+            <li class="featured__info">Express</li>
+            <li class="featured__info">MongoDB</li>
+            <li class="featured__info">Material UI</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="featured__label">Project type</h3>
+          <p class="featured__info">Full Stack</p>
+        </div>
+        <div>
+          <h3 class="featured__label">Timeline</h3>
+          <p class="featured__info">June 2023 - July 2023</p>
+        </div>
+      </div>
+      <div class="featured__img-container">
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/2546x1280" data-src="/CollectorMania_CardRequestForm.png"
+            alt="website image">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/2546x1280" data-src="/CollectorMania_Home.png"
+            alt="website image">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/2546x1280" data-src="/CollectorMania_ProductPage.png"
+            alt="website image">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/2546x1280" data-src="/CollectorMania_ContactUs.png"
+            alt="website image">
+        </div>
+      </div>
+    </section>
+    <section class="work container section">
+      <h2 class="work__title">Projects</h2>
+      <p class="work__description">Here are some my projects 😊</p>
+      <div class="work__container">
+        <!-- Project 1 -->
+        <h3 class="work__project-title">Expensify</h3>
+        <div class="work__img-wrapper work__image1">
+          <img class="lazy loading" src="https://fakeimg.pl/2310x1297" data-src="BWIV_Expensify_Home.png"
+            alt="Todor Dimov's Portfolio">
+        </div>
+        <div class="work__project work__content1">
+          <h3 class="work__subtitle">Expensify</h3>
+          <p class="work__project-description1">BWIV Expensify is a web application designed with friends in mind to
+            keep track of expenses while on a trip.</p>
+          <p class="work__project-description2">This is a work in progress, but I'm really enjoying the way it's taking
+            shape.</p>
+          <a class="btn work__projects-btn" href="https://github.com/immanuelvatta/Expensify">GitHub Repo</a>
+        </div>
+        <!-- Project 2 -->
+        <h3 class="work__project-title">RBIV</h3>
+        <div class="work__img-wrapper work__image2">
+          <img class="lazy loading" src="https://fakeimg.pl/2310x1297" data-src="/RBVI_LandingPage.png"
+            alt="RBVI Landing page Image">
+        </div>
+        <div class="work__project work__content2">
+          <h3 class="work__subtitle">RBIV</h3>
+          <p class="work__project-description1">Real-Estate is a MERN app (MongoDB,Express.js,React.js,Node.js) I
+            created an application that lets a user(in our case a realtor) create a listing where they can add a
+            property to our website. Our Website is Mobile Friendly.</p>
+          <a class="btn work__projects-btn" href="http://35.87.77.5/">Demo</a>
+        </div>
+        <!-- Project 3 -->
+        <h3 class="work__project-title">Student Work Scheduler</h3>
+        <div class="work__img-wrapper work__image3">
+          <img class="lazy loading" src="https://fakeimg.pl/2310x1297" data-src="/StudentWorkScheduler.gif"
+            alt="Todor Dimov's Portfolio">
+        </div>
+        <div class="work__project work__content3">
+          <h3 class="work__subtitle">Student Work Scheduler</h3>
+          <p class="work__project-description1">The Student Work Time Scheduler App is a web-based application built
+            using Python, Flask, and MySQL, designed to streamline the process of allowing students to select their
+            preferred work times. This application provides a user-friendly interface for students to input their
+            availability and preferences for work or study hours, making it easier for educational institutions or
+            organizations to create efficient schedules that cater to students' needs.</p>
+          <a class="btn work__projects-btn" href="https://github.com/BraxtonWalters/Student_Preferred_Times">GitHub
+            Repo</a>
+        </div>
+    </section>
+    <section class="contact container section">
+      <h2 class="contact__title">Contact Me</h2>
+      <p class="contact__description">Hi, my inbox is always open so feel free to reach out and I will get back to you
+        as soon as possible!</p>
+      <button class="open_model contact__btn btn">Email Me</button>
+      <p class="contact__description or_thing"><strong>- OR -</strong></p>
+      <div class="social_container">
+        <a href="https://www.linkedin.com/in/braxton-walters/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/BraxtonWalters" target="_blank">
+          <i class="fa-brands fa-square-github"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer id="contact" class="footer container section">
+    <h3 class="footer__title">~ Braxton Walters~</h3>
+  </footer>
+  <div class="modal">
+    <div class="modal_content">
+      <form id="sendMessage">
+        <div class="form_style">
+          <h2 class="modal_title">Shoot me an email</h2>
+          <div class="modal_input_box">
+            <input class="requiredThing" type="text" id="name">
+            <span class="modal_input_box_span" id="nameLabel">Name</span>
           </div>
-          <div>
-            <h3 class="featured__label">Project type</h3>
-            <p class="featured__info">Full Stack</p>
+          <div class="modal_input_box">
+            <input class="requiredThing" type="text" id="email">
+            <span class="modal_input_box_span" id="emailLabel">Email</span>
           </div>
-          <div>
-            <h3 class="featured__label">Timeline</h3>
-            <p class="featured__info">June 2023 - July 2023</p>
+          <div class="modal_input_box">
+            <input class="requiredThing" type="text" id="subject">
+            <span class="modal_input_box_span" id="subjectLabel">Subject</span>
+          </div>
+          <div class="modal_input_box">
+            <textarea class="requiredThing" rows="10" id="message"></textarea>
+            <span class="modal_input_box_span" id="messageLabel">Message</span>
+          </div>
+          <div class="error_container">
+            <p class="error_message">Please finish the Form 😊</p>
+          </div>
+          <div class="btn_container">
+            <button type="submit" class="modal_btn btn">Submit</button>
+            <button class="close_modal modal_btn btn">Close</button>
           </div>
         </div>
-        <div class="featured__img-container">
-          <div class="featured__img-wrapper">
-            <img class="lazy loading" src="https://fakeimg.pl/2546x1280" data-src="/CollectorMania_CardRequestForm.png" alt="website image">
-          </div>
-          <div class="featured__img-wrapper">
-            <img class="lazy loading" src="https://fakeimg.pl/2546x1280" data-src="/CollectorMania_Home.png" alt="website image">
-          </div>
-          <div class="featured__img-wrapper">
-            <img class="lazy loading" src="https://fakeimg.pl/2546x1280" data-src="/CollectorMania_ProductPage.png" alt="website image">
-          </div>
-          <div class="featured__img-wrapper">
-            <img class="lazy loading" src="https://fakeimg.pl/2546x1280" data-src="/CollectorMania_ContactUs.png" alt="website image">
-          </div>
-        </div>
-      </section>
-      <section class="work container section">
-        <h2 class="work__title">Projects</h2>
-        <p class="work__description">Here are some my projects 😊</p>
-        <div class="work__container">
-          <!-- Project 1 -->
-          <h3 class="work__project-title">Expensify</h3>
-          <div class="work__img-wrapper work__image1">
-            <img class="lazy loading" src="https://fakeimg.pl/2310x1297" data-src="BWIV_Expensify_Home.png" alt="Todor Dimov's Portfolio">
-          </div>
-          <div class="work__project work__content1">
-            <h3 class="work__subtitle">Expensify</h3>
-            <p class="work__project-description1">BWIV Expensify is a web application designed with friends in mind to keep track of expenses while on a trip.</p>
-            <p class="work__project-description2">This is a work in progress, but I'm really enjoying the way it's taking shape.</p>
-            <a class="btn work__projects-btn" href="https://github.com/immanuelvatta/Expensify">GitHub Repo</a>
-          </div>
-          <!-- Project 2 -->
-          <h3 class="work__project-title">RBIV</h3>
-          <div class="work__img-wrapper work__image2">
-            <img class="lazy loading" src="https://fakeimg.pl/2310x1297" data-src="/RBVI_LandingPage.png" alt="RBVI Landing page Image">
-          </div>
-          <div class="work__project work__content2">
-            <h3 class="work__subtitle">RBIV</h3>
-            <p class="work__project-description1">Real-Estate is a MERN app (MongoDB,Express.js,React.js,Node.js) I created an application that lets a user(in our case a realtor) create a listing where they can add a property to our website. Our Website is Mobile Friendly.</p>
-            <a class="btn work__projects-btn" href="http://35.87.77.5/">Demo</a>
-          </div>
-          <!-- Project 3 -->
-          <h3 class="work__project-title">Student Work Scheduler</h3>
-          <div class="work__img-wrapper work__image3">
-            <img class="lazy loading" src="https://fakeimg.pl/2310x1297" data-src="/StudentWorkScheduler.gif" alt="Todor Dimov's Portfolio">
-          </div>
-          <div class="work__project work__content3">
-            <h3 class="work__subtitle">Student Work Scheduler</h3>
-            <p class="work__project-description1">The Student Work Time Scheduler App is a web-based application built using Python, Flask, and MySQL, designed to streamline the process of allowing students to select their preferred work times. This application provides a user-friendly interface for students to input their availability and preferences for work or study hours, making it easier for educational institutions or organizations to create efficient schedules that cater to students' needs.</p>
-            <a class="btn work__projects-btn" href="https://github.com/BraxtonWalters/Student_Preferred_Times">GitHub Repo</a>
-        </div>
-      </section>
-      <section class="contact container section">
-        <h2 class="contact__title">Contact Me</h2>
-        <p class="contact__description">Hi, my inbox is always open so feel free to reach out and I will get back to you as soon as possible!</p>
-        <a class="contact__btn btn" href="mailto:braxton.walters@gmail.com" target="_blank">Email Me</a>
-      </section>
-    </main>
-    <footer id="contact" class="footer container section">
-      <h3 class="footer__title">~ Braxton Walters~</h3>
-    </footer>
-    <script type="module" src="./src/main.js"></script>
-  </body>
+      </form>
+    </div>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
 </html>

@@ -1,4 +1,10 @@
-braxtonwalters.com, www.braxtonwalters.com {
+braxtonwalters.com {
+    root * /usr/share/caddy
+    file_server
+    encode gzip
+}
+
+www.braxtonwalters.com {
     root * /usr/share/caddy
     file_server
     encode gzip

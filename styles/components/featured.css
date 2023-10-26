@@ -51,7 +51,8 @@
 
 .project_tech_stack {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .project_item {

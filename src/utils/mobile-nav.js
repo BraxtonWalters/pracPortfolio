@@ -2,6 +2,7 @@ const mobileNav = () => {
     const headerBtn = document.querySelector(".header__bars");
     const mobileNav = document.querySelector(".mobile-nav");
     const mobileLinks = document.querySelectorAll(".mobile-nav__link");
+    const body = document.getElementById("body");
     let isNavOpen = false;
 
     headerBtn.addEventListener("click", () => {
@@ -14,6 +15,14 @@ const mobileNav = () => {
             document.body.style.overflowY = "auto";
         }
     });
+
+    body.addEventListener("click", (e) => {
+        if(e.target.classList[0] === "mobile-nav") {
+            mobileNav.style.display = "none";
+            document.body.style.overflowY = "auto";
+        }
+    })
+
     mobileLinks.forEach(link => {
         link.addEventListener("click", () => {
             isNavOpen = false;

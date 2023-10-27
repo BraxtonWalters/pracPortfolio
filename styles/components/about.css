@@ -14,11 +14,12 @@
 .about__title {
     font-size: var(--size-2xl);
     color: var(--clr-light);
+    text-transform: uppercase;
 }
 
 .about__description {
     font-size: var(--size-sm);
-    color: var(--clr-slate600);
+    color: var(--clr-slate400);
 }
 
 .about__hr {
@@ -26,14 +27,26 @@
 }
 
 .about__subtitle {
-    font-size: var(--size-sm);
-    color: var(--clr-slate400);
+    font-size: var(--size-xl);
+    color: var(--clr-light);
+    text-transform: uppercase;
 }
 
 .tech_banner_container {
     display: flex;
     gap: 2rem;
     overflow-x: scroll;
+    padding: 1.5rem;
+}
+
+.tech_banner_container::-webkit-scrollbar {
+    height: 5px;
+    width: 1px;
+}
+
+.tech_banner_container::-webkit-scrollbar-thumb {
+    background-color: var(--clr-indigo);
+    border-radius: 10px;
 }
 
 .tech_banner_item {
@@ -62,7 +75,7 @@
     }
     
     .about__subtitle {
-        font-size: var(--size-base);
+        font-size: var(--size-2xl);
     }
 
     .tech_banner_container {
@@ -106,7 +119,7 @@
     }
     
     .about__subtitle {
-        font-size: var(--size-lg);
+        font-size: var(--size-3xl);
     }
 
     .tech_banner_item > i {
@@ -132,7 +145,7 @@
     }
     
     .about__subtitle {
-        font-size: var(--size-xl);
+        font-size: var(--size-4xl);
     }
 }
 /* 2xl */

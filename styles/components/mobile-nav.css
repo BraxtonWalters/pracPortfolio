@@ -26,7 +26,7 @@
     font-size: var(--size-sm);
     text-decoration: none;
     font-weight: 600;
-    color: var(--clr-slate600);
+    color: var(--clr-slate400);
     letter-spacing: -0.05em;
     transition: color 0.5s;
 }
@@ -44,7 +44,12 @@
     display: block;
     width: var(--size-xl);
     height: var(--size-xl);
-    color: var(--clr-slate600);
+    color: var(--clr-slate400);
+    transition: color 0.3s;
+}
+
+.mobile-nav__sun:hover {
+    color: var(--clr-rose);
 }
 
 .mobile-nav__btn {

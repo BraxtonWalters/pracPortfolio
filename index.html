@@ -10,21 +10,34 @@
   <title>Braxton Walters</title>
 </head>
 
-<body>
+<body id="body">
+  <!-- bubbles start -->
   <div class="area">
     <ul class="circles">
+      <!-- 1 -->
+      <li></li> 
+      <!-- 2 -->
+      <li id="circle2"></li>
+      <!-- 3 -->
       <li></li>
+      <!-- 4 -->
       <li></li>
+      <!-- 5 -->
       <li></li>
+      <!-- 6 -->
+      <li id="circle6"></li>
+      <!-- 7 -->
+      <li id="circle7"></li>
+      <!-- 8 -->
       <li></li>
+      <!-- 8 -->
       <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <!-- 9 -->
+      <li id="circle9"></li>
     </ul>
   </div>
+  <!-- bubbles end -->
+  <!-- header start -->
   <header class="header container">
     <nav>
       <ul class="header__menu">
@@ -60,7 +73,8 @@
       </button>
     </nav>
   </header>
-  <!-- Mobile Nav -->
+  <!-- header start -->
+  <!-- Mobile Nav start -->
   <div class="mobile-nav">
     <nav>
       <ul class="mobile-nav__menu">
@@ -89,8 +103,9 @@
       </ul>
     </nav>
   </div>
-  <!-- End of Mobile Nav -->
+  <!-- Mobile Nav End -->
   <main>
+    <!-- Hero Start -->
     <section class="hero container">
       <h2 class="hero__subtitle">Hi, I'm Braxton</h2>
       <h1 class="hero__title">Fullstack <br> WEB DEVELOPER</h1>
@@ -98,6 +113,8 @@
         enthusiast specialized in building stunning, pixel-perfect interactive applications.</p>
       <button class="open_model hero__btn btn">Reach out</button>
     </section>
+    <!-- Hero End -->
+    <!-- About Start -->
     <section id="about" class="about container section">
       <div class="about__content">
         <h2 class="about__title">About</h2>
@@ -108,7 +125,9 @@
         <p class="about__description">I graduated from <span>Coding Dojo</span> as a Fullstack web developer, where I
           spent <span>1000+ hours</span> honing my skills through all phases of project development, including building,
           testing, debugging, and deploying.</p>
-        <h3 class="about__subtitle">Technologies</h3>
+        <!-- About End -->
+        <!-- Tech Start -->
+        <h3 class="about__subtitle">Tech</h3>
         <hr class="about__hr">
         <div class="tech_banner_container">
           <div class="tech_banner_item">
@@ -143,6 +162,8 @@
         <hr class="about__hr">
       </div>
     </section>
+    <!-- Tech End -->
+    <!-- Featured Project Start -->
     <section id="featured" class="featured container section">
       <h3 class="featured__title">Featured Project</h3>
       <div class="featured__wrapper">
@@ -152,22 +173,25 @@
         </a>
       </div>
       <div class="role_container">
-        <p class="role_item">My Role: Fullstack Developer</p>
+        <p class="role_item margb">My Role:</p>
+        <ul>
+          <li class="my_team_text ul_thing">Fullstack Developer</li>
+        </ul>
       </div>
-      <div class="">
+      <div>
         <p class="my_team_text margb">My Team: </p>
-        <ul class="">
+        <ul>
           <li class="team_list_item">
+            <p class="my_team_text">Steve N - DevOps Engineer</p>
             <a href="https://www.linkedin.com/in/snagasawa85/">
               <i class="fa-brands fa-linkedin my_team_text rose_red"></i>
             </a>
-            <p class="my_team_text">Steve N - DevOps Engineer</p>
           </li>
           <li class="team_list_item">
+            <p class="my_team_text">Jason F - UX/UI Designer</p>
             <a href="https://www.linkedin.com/in/jasonf222/">
               <i class="fa-brands fa-linkedin my_team_text rose_red"></i>
             </a>
-            <p class="my_team_text">Jason F - UX/UI Designer</p>
           </li>
         </ul>
       </div>
@@ -214,15 +238,17 @@
         </div>
       </div>
     </section>
+    <!-- Featured Project End -->
+    <!-- Work Projects Start -->
     <section class="work container section">
       <h2 class="work__title">Projects</h2>
-      <p class="work__description">Here are some my projects 😊</p>
+      <p class="work__description">Here are some of my projects 😊</p>
       <div class="work__container">
         <!-- Project 1 -->
         <h3 class="work__project-title">Expensify</h3>
         <div class="work__img-wrapper work__image1">
           <img class="lazy loading" src="https://fakeimg.pl/2310x1297" data-src="BWIV_Expensify_Home.png"
-            alt="Todor Dimov's Portfolio">
+            alt="BWIV Expensify Website image">
         </div>
         <div class="work__project work__content1">
           <h3 class="work__subtitle">Expensify</h3>
@@ -240,9 +266,8 @@
         </div>
         <div class="work__project work__content2">
           <h3 class="work__subtitle">RBIV</h3>
-          <p class="work__project-description1">Real-Estate is a MERN app (MongoDB,Express.js,React.js,Node.js) I
-            created an application that lets a user(in our case a realtor) create a listing where they can add a
-            property to our website. Our Website is Mobile Friendly.</p>
+          <p class="work__project-description1">RBIV is a real-estate app built in MERN. I
+            created an application that lets a user(in our case a realtor) create a listing where they can add a property to our website.</p>
           <a class="btn work__projects-btn" href="http://35.87.77.5/">Demo</a>
         </div>
         <!-- Project 3 -->
@@ -260,10 +285,11 @@
             Repo</a>
         </div>
     </section>
+    <!-- Work Projects End -->
+    <!-- Contact Start -->
     <section class="contact container section">
-      <h2 class="contact__title">Contact Me</h2>
-      <p class="contact__description">Hi, my inbox is always open so feel free to reach out and I will get back to you
-        as soon as possible!</p>
+      <h2 class="contact__title">Contact</h2>
+      <p class="contact__description">Let's have a conversation! Feel free to reach out via email or Linkedin.</p>
       <button class="open_model contact__btn btn">Email Me</button>
       <p class="contact__description or_thing"><strong>- OR -</strong></p>
       <div class="social_container">
@@ -275,10 +301,12 @@
         </a>
       </div>
     </section>
+    <!-- Contact End -->
   </main>
   <footer id="contact" class="footer container section">
-    <h3 class="footer__title">~ Braxton Walters~</h3>
+    <h3 class="footer__title">~Braxton Walters~</h3>
   </footer>
+  <!-- Modal Start -->
   <div class="modal">
     <div class="modal_content">
       <form id="sendMessage">
@@ -311,6 +339,7 @@
       </form>
     </div>
   </div>
+  <!-- Modal End -->
   <script type="module" src="./src/main.js"></script>
 </body>
 

@@ -5,12 +5,13 @@
 .work__title {
     font-size: var(--size-2xl);
     color: var(--clr-light);
+    text-transform: uppercase;
 }
 
 .work__description {
     max-width: 60ch;
     font-size: var(--size-sm);
-    color: var(--clr-slate600);
+    color: var(--clr-slate400);
     margin: .5rem auto;
 }
 
@@ -40,19 +41,20 @@
 }
 
 .work__img-wrapper:hover::after {
-    background-color: rgba(79, 70, 229, 0.3);
+    background-color: rgba(79, 70, 229, 0.0);
 }
 
 .work__project-description1 {
     font-size: var(--size-sm);
-    color: var(--clr-slate600);
+    color: var(--clr-slate400);
     margin: 1rem 0;
 }
 
 .work__project-description2 {
-    font-size: var(--size-sm);
-    color: var(--clr-slate400);
+    font-size: var(--size-xs);
+    color: var(--clr-slate600);
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .work__projects-btn {
@@ -62,19 +64,6 @@
 .work__subtitle {
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* xs */
 @media (min-width: 475px) {
@@ -98,7 +87,7 @@
     }
     
     .work__project-description2 {
-        font-size: var(--size-base);
+        font-size: var(--size-xs);
         margin-bottom: 1.5rem;
     }
 
@@ -149,17 +138,19 @@
 
     .work__content1 {
         grid-area: content1;
+        text-align: start;
     }
 
     .work__content2 {
         grid-area: content2;
         margin-top: 2rem;
-
+        text-align: end;
     }
 
     .work__content3 {
         grid-area: content3;
         margin-top: 2rem;
+        text-align: start;
     }
 
     .work__content4 {
@@ -188,7 +179,7 @@
     }
     
     .work__project-description2 {
-        font-size: var(--size-xs);
+        font-size: var(--size-xxs);
         margin-bottom: 1em;
     }
 
@@ -212,7 +203,7 @@
     }
     
     .work__project-description2 {
-        font-size: var(--size-sm);
+        font-size: var(--size-xs);
     }
 
     .work__projects-btn {
@@ -238,7 +229,7 @@
     }
     
     .work__project-description2 {
-        font-size: var(--size-base);
+        font-size: var(--size-sm);
     }
 
     .work__projects-btn {
@@ -264,9 +255,6 @@
         font-size: var(--size-lg);
     }
     
-    .work__project-description2 {
-        font-size: var(--size-lg);
-    }
 
     .work__projects-btn {
         font-size: var(--size-lg);

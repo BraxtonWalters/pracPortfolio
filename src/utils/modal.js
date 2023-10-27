@@ -5,6 +5,7 @@ const modal = () => {
     const openModalBtn = document.querySelectorAll(".open_model");
     const closeBtn = document.querySelector(".close_modal");
     const sendMessage = document.getElementById("sendMessage");
+    const body = document.getElementById("body");
 
     openModalBtn.forEach(btn => {
         btn.addEventListener("click", () => {
@@ -16,6 +17,12 @@ const modal = () => {
     closeBtn.addEventListener("click", () => {
         modal.style.display = "none";
     })
+
+    body.addEventListener("click", (e) => {
+        if (e.target.classList[0] === "modal") {
+            modal.style.display = "none";
+        }
+    })
     
     const name = document.getElementById("name");
     const email = document.getElementById("email");
@@ -26,7 +33,6 @@ const modal = () => {
     const listenerArr = [name, email, subject, message];
     for(const listener of listenerArr) {
         listener.addEventListener('change', () => {
-            console.log(listener);
             if(listener.value) {
                 document.getElementById(`${listener.id}Label`).classList.add("filled_input")
             } else {

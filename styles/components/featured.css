@@ -1,9 +1,5 @@
-#featured {
-    max-width: 1005px;
-}
 
 .featured__subtitle {
-    margin-top: .7rem;
     font-size: var(--size-lg);
     color: var(--clr-indigo);
     text-transform: capitalize;
@@ -23,25 +19,27 @@
 }
 
 .featured__link {
+    text-align: center;
     display: flex;
     text-decoration: none;
     align-items: center;
     width: var(--size-2xl);
     height: var(--size-2xl);
+    font-size: 20px;
+    transition: transform 0.3s ease;
 }
 
-.featured__link > i {
-    font-size: 30px;
+.featured__link:hover {
+    transform: scale(1.2);
 }
 
 .role_item {
-    color: var(--clr-slate600);
+    color: var(--clr-slate400);
     font-size: var(--size-sm);
-    margin: 1rem 0;
 }
 
 .team_container {
-    color: var(--clr-slate600);
+    color: var(--clr-slate400);
     font-size: var(--size-sm);
     margin: 1rem 0;
 }
@@ -57,8 +55,13 @@
 }
 
 .my_team_text {
-    color: var(--clr-slate600);
+    color: var(--clr-slate400);
     font-size: var(--size-sm);
+}
+
+
+.ul_thing {
+    list-style-type: none;
 }
 
 .margb {
@@ -67,7 +70,13 @@
 
 .rose_red {
     color: var(--clr-rose);
+    transition: transform 0.3s ease;
 }
+
+.rose_red:hover {
+    transform: scale(1.2);
+}
+
 
 .project_tech_stack {
     margin-top: 1rem;
@@ -84,12 +93,12 @@
 
 .project_item > i,
 .project_item > p {
-    color: var(--clr-slate600);
+    color: var(--clr-slate400);
     font-size: var(--size-sm);
 }
 
 .featured__description {
-    color: var(--clr-slate600);
+    color: var(--clr-slate400);
     font-size: var(--size-sm);
     margin: 1rem 0;
 }
@@ -107,7 +116,7 @@
 
 .featured__info {
     font-size: var(--size-sm);
-    color: var(--clr-slate600);
+    color: var(--clr-slate400);
     text-transform: capitalize;
 }
 
@@ -320,6 +329,10 @@
     }
     .featured__info-container div {
         text-align: center;
+    }
+    
+    #featured {
+        max-width: 1005px;
     }
 }
 /* 2xl */

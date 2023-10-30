@@ -18,8 +18,24 @@ import lazyLoading from "./utils/lazy-loading";
 import modal from "./utils/modal";
 import circleFollow from "./utils/circles";
 
+document.addEventListener("DOMContentLoaded", () => {
+    const theme = localStorage.getItem("theme");
+    const imageWrappers = document.querySelectorAll(".featured__img-wrapper");
+    const workImageWrappers = document.querySelectorAll(".work__img-wrapper");
+
+    if (theme === "light-mode") {
+        for (const imageWrapper of imageWrappers) {
+            imageWrapper.classList.remove("featured__img-wrapper")
+        }
+        for (const workImageWrapper of workImageWrappers) {
+            workImageWrapper.classList.remove("work__img-wrapper")
+        }
+    }
+});
+
+
 mobileNav();
 darkMode();
-lazyLoading()
+lazyLoading();
 modal();
 circleFollow();

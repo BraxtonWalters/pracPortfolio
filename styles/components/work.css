@@ -65,6 +65,16 @@
     display: none;
 }
 
+@keyframes pulse {
+    from, to {
+        scale: 1;
+    }
+    
+    50% {
+        scale: 1.03;
+    }
+}
+
 /* xs */
 @media (min-width: 475px) {
     .work__title {
@@ -95,6 +105,7 @@
         font-size: var(--size-base);
     }
 }
+
 /* sm */
 @media (min-width: 640px) {
     .work__container {
@@ -265,13 +276,8 @@
     }
 
     .work__container {
-        width: 80%;
         margin: 0 auto;
     }
 }
 /* 2xl */
-@media (min-width: 1536px) {
-    .work__container {
-        width: 70%;
-    }
-}
+/* @media (min-width: 1536px) {} */

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="top" lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -38,19 +38,25 @@
   </div>
   <!-- bubbles end -->
   <!-- header start -->
-  <header class="header container">
-    <nav>
+  <header class="header">
+    <nav class="nav_container container ">
+      <div class="left_side_nav">
+        <a href="#top">
+          <i class="fa-solid fa-code header__link logo"></i>
+        </a>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
       <ul class="header__menu">
-        <li>
-          <a class="header__link" href="#about">About</a>
-        </li>
-        <li>
-          <a class="header__link" href="#featured">Work</a>
-        </li>
-        <li>
-          <a class="header__link" href="#contact">Contact</a>
-        </li>
-        <li class="header__line"></li>
         <li>
           <button id="theme-toggle" class="header__sun">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -72,6 +78,7 @@
         </svg>
       </button>
     </nav>
+    <hr class="about__hr">
   </header>
   <!-- header start -->
   <!-- Mobile Nav start -->
@@ -107,11 +114,13 @@
   <main>
     <!-- Hero Start -->
     <section class="hero container">
-      <h2 class="hero__subtitle">Hi, I'm Braxton</h2>
-      <h1 class="hero__title">Fullstack <br> WEB DEVELOPER</h1>
-      <p class="hero__description">A passionate <strong>Fullstack</strong> web developer and <strong>UI/UX</strong>
-        enthusiast specialized in building stunning, pixel-perfect interactive applications.</p>
-      <button class="open_model hero__btn btn">Reach out</button>
+          <h2 class="hero__subtitle">Hi, I'm Braxton</h2>
+          <h1 class="hero__title">Fullstack DEVELOPER</h1>
+          <p class="hero__description">A passionate <strong>Fullstack</strong> web developer and <strong>UI/UX</strong>
+            enthusiast specialized in building stunning, pixel-perfect interactive applications.</p>
+            <div>
+              <button class="open_model hero__btn btn">Reach out</button>
+            </div>
     </section>
     <!-- Hero End -->
     <!-- About Start -->

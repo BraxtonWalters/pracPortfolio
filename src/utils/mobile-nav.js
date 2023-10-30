@@ -15,9 +15,10 @@ const mobileNav = () => {
             document.body.style.overflowY = "auto";
         }
     });
-
+    
     body.addEventListener("click", (e) => {
         if(e.target.classList[0] === "mobile-nav") {
+            isNavOpen = !isNavOpen
             mobileNav.style.display = "none";
             document.body.style.overflowY = "auto";
         }
